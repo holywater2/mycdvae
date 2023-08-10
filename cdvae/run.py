@@ -91,13 +91,14 @@ def run(cfg: DictConfig) -> None:
 
     # Instantiate model
     hydra.utils.log.info(f"Instantiating <{cfg.model._target_}>")
-    model: pl.LightningModule = hydra.utils.instantiate(
-        cfg.model,
-        optim=cfg.optim,
+    model: pl.LightningModule = hydra.utils.instantiate( # model: pl.LightningModule = 에서 ':'은 변수 타입을 hinting
+        cfg.model, # cdvae.pl_modules.model.CDVAE 가 이미 LightningModule을 상속받음
+        optim=cfg.optim, # model configurations
         data=cfg.data,
         logging=cfg.logging,
         _recursive_=False,
-    )
+    ) # -> CDVAE model을 yaml의 파라미터를 인풋으로 만듬
+    # cfg.model이 가지고 있는 parameter: model _target_, mode argument..
 
     # Pass scaler from datamodule to model
     hydra.utils.log.info(f"Passing scaler from datamodule to model <{datamodule.scaler}>")

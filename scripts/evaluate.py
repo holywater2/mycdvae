@@ -174,10 +174,13 @@ def optimization(model, ld_kwargs, data_loader,
 
 def main(args):
     # load_data if do reconstruction.
+    print("Step1: model path")
     model_path = Path(args.model_path)
+    print("Step2: load model")
     model, test_loader, cfg = load_model(
         model_path, load_data=('recon' in args.tasks) or
         ('opt' in args.tasks and args.start_from == 'data'))
+    print("Step2-2: ld_kwargs")
     ld_kwargs = SimpleNamespace(n_step_each=args.n_step_each,
                                 step_lr=args.step_lr,
                                 min_sigma=args.min_sigma,
@@ -186,7 +189,7 @@ def main(args):
 
     if torch.cuda.is_available():
         model.to('cuda')
-
+    print("Step3: recon")
     if 'recon' in args.tasks:
         print('Evaluate model on the reconstruction task.')
         start_time = time.time()
@@ -213,6 +216,7 @@ def main(args):
             'time': time.time() - start_time
         }, model_path / recon_out_name)
 
+    print("Step4: gen")
     if 'gen' in args.tasks:
         print('Evaluate model on the generation task.')
         start_time = time.time()
@@ -239,6 +243,7 @@ def main(args):
             'time': time.time() - start_time
         }, model_path / gen_out_name)
 
+    print("Step5: opt")
     if 'opt' in args.tasks:
         print('Evaluate model on the property optimization task.')
         start_time = time.time()

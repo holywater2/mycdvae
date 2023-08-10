@@ -616,10 +616,12 @@ class StandardScalerTorch(object):
 
     def transform(self, X):
         X = torch.tensor(X, dtype=torch.float)
+        # X = X.clone().detach()
         return (X - self.means) / self.stds
 
     def inverse_transform(self, X):
         X = torch.tensor(X, dtype=torch.float)
+        # X = X.clone().detach()
         return X * self.stds + self.means
 
     def match_device(self, tensor):
@@ -641,7 +643,8 @@ class StandardScalerTorch(object):
 
 
 def get_scaler_from_data_list(data_list, key):
-    targets = torch.tensor([d[key] for d in data_list])
+    # targets = torch.tensor([d[key] for d in data_list])
+    targets = torch.tensor(np.array([d[key] for d in data_list]))
     scaler = StandardScalerTorch()
     scaler.fit(targets)
     return scaler

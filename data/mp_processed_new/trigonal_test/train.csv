@@ -1,0 +1,109 @@
+material_id,formation_energy_per_atom,band_gap,pretty_formula,e_above_hull,elements,cif,spacegroup.number,crystal_system
+mvc-5044,-2.376802519166666,0.0,Ca2AgWO6,0.0705773409999999,"['Ag', 'Ca', 'O', 'W']","# generated using pymatgen
+data_Ca2AgWO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.62703300
+_cell_length_b   5.92318500
+_cell_length_c   9.66649429
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   125.08641742
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca2AgWO6
+_chemical_formula_sum   'Ca4 Ag2 W2 O12'
+_cell_volume   263.63853035
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.72697500  0.93608200  0.74551600  1.0
+  Ca  Ca1  1  0.27302500  0.43608200  0.75448400  1.0
+  Ca  Ca2  1  0.27302500  0.06391800  0.25448400  1.0
+  Ca  Ca3  1  0.72697500  0.56391800  0.24551600  1.0
+  Ag  Ag4  1  0.50000000  0.00000000  0.00000000  1.0
+  Ag  Ag5  1  0.50000000  0.50000000  0.50000000  1.0
+  W  W6  1  0.00000000  0.00000000  0.50000000  1.0
+  W  W7  1  0.00000000  0.50000000  0.00000000  1.0
+  O  O8  1  0.23231800  0.72695600  0.57333100  1.0
+  O  O9  1  0.76768200  0.22695600  0.92666900  1.0
+  O  O10  1  0.76768200  0.27304400  0.42666900  1.0
+  O  O11  1  0.23231800  0.77304400  0.07333100  1.0
+  O  O12  1  0.66178800  0.82836000  0.44651600  1.0
+  O  O13  1  0.33821200  0.32836000  0.05348400  1.0
+  O  O14  1  0.33821200  0.17164000  0.55348400  1.0
+  O  O15  1  0.66178800  0.67164000  0.94651600  1.0
+  O  O16  1  0.88998400  0.55667300  0.76817600  1.0
+  O  O17  1  0.11001600  0.05667300  0.73182400  1.0
+  O  O18  1  0.88998400  0.94332700  0.26817600  1.0
+  O  O19  1  0.11001600  0.44332700  0.23182400  1.0
+",14,monoclinic
+mp-568628,-1.1759142878194726,2.7167,CsHg5Cl11,0.0028675288235291,"['Cl', 'Cs', 'Hg']","# generated using pymatgen
+data_CsHg5Cl11
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   12.49590800
+_cell_length_b   14.88671200
+_cell_length_c   6.94094540
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   120.26014254
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsHg5Cl11
+_chemical_formula_sum   'Cs2 Hg10 Cl22'
+_cell_volume   1115.24796744
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.00000000  0.00000000  0.00000000  1.0
+  Cs  Cs1  1  0.50000000  0.50000000  0.00000000  1.0
+  Hg  Hg2  1  0.81716900  0.16689400  0.31785500  1.0
+  Hg  Hg3  1  0.50000000  0.00000000  0.00000000  1.0
+  Hg  Hg4  1  0.18283100  0.83310600  0.68214500  1.0
+  Hg  Hg5  1  0.18283100  0.16689400  0.68214500  1.0
+  Hg  Hg6  1  0.81716900  0.83310600  0.31785500  1.0
+  Hg  Hg7  1  0.31716900  0.66689400  0.31785500  1.0
+  Hg  Hg8  1  0.00000000  0.50000000  0.00000000  1.0
+  Hg  Hg9  1  0.68283100  0.33310600  0.68214500  1.0
+  Hg  Hg10  1  0.68283100  0.66689400  0.68214500  1.0
+  Hg  Hg11  1  0.31716900  0.33310600  0.31785500  1.0
+  Cl  Cl12  1  0.29338350  0.87474750  0.05813200  1.0
+  Cl  Cl13  1  0.57976050  0.28037550  0.31324400  1.0
+  Cl  Cl14  1  0.57976050  0.71962450  0.31324400  1.0
+  Cl  Cl15  1  0.00000000  0.00000000  0.50000000  1.0
+  Cl  Cl16  1  0.42023950  0.71962450  0.68675600  1.0
+  Cl  Cl17  1  0.29338350  0.12525250  0.05813200  1.0
+  Cl  Cl18  1  0.35343300  0.00000000  0.62123700  1.0
+  Cl  Cl19  1  0.64656700  0.00000000  0.37876300  1.0
+  Cl  Cl20  1  0.70661650  0.87474750  0.94186800  1.0
+  Cl  Cl21  1  0.42023950  0.28037550  0.68675600  1.0
+  Cl  Cl22  1  0.70661650  0.12525250  0.94186800  1.0
+  Cl  Cl23  1  0.79338350  0.37474750  0.05813200  1.0
+  Cl  Cl24  1  0.07976050  0.78037550  0.31324400  1.0
+  Cl  Cl25  1  0.07976050  0.21962450  0.31324400  1.0
+  Cl  Cl26  1  0.50000000  0.50000000  0.50000000  1.0
+  Cl  Cl27  1  0.92023950  0.21962450  0.68675600  1.0
+  Cl  Cl28  1  0.79338350  0.62525250  0.05813200  1.0
+  Cl  Cl29  1  0.85343300  0.50000000  0.62123700  1.0
+  Cl  Cl30  1  0.14656700  0.50000000  0.37876300  1.0
+  Cl  Cl31  1  0.20661650  0.37474750  0.94186800  1.0
+  Cl  Cl32  1  0.92023950  0.78037550  0.68675600  1.0
+  Cl  Cl33  1  0.20661650  0.62525250  0.94186800  1.0
+",12,monoclinic

@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=0 python cdvae/run.py data=mp_20_orthorhombic model=vae_crystal_family model.crystal_family=3 model.predict_property=True expname=orthorhombic
+CUDA_VISIBLE_DEVICES=1 python cdvae/run.py data=mp_20_tetragonal model=vae_crystal_family model.crystal_family=4 model.predict_property=True expname=tetragonal
+CUDA_VISIBLE_DEVICES=1 python cdvae/run.py data=mp_20_trigonal model=vae_crystal_family model.crystal_family=5 model.predict_property=True expname=trigonal
+CUDA_VISIBLE_DEVICES=1 python cdvae/run.py data=mp_20_hexagonal model=vae_crystal_family model.crystal_family=6 model.predict_property=True expname=hexagonal
+CUDA_VISIBLE_DEVICES=1 python cdvae/run.py data=mp_20_cubic model=vae_crystal_family model.crystal_family=7 model.predict_property=True expname=cubic
